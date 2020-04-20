@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from  '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import { signInWithGoogle, signInWithFacebook } from '../../firebase/firebase.utils';
+import { signInWithGoogle, signInWithFacebook, signInWithTwitter } from '../../firebase/firebase.utils';
 
 import './sign-in.styles.scss';
 
@@ -65,6 +65,12 @@ class SignIn extends React.Component {
                             isFacebookSignIn
                         >
                             Sign In With Facebook
+                        </CustomButton>
+                        <CustomButton
+                            onClick={signInWithTwitter}
+                            isTwitterSignIn
+                        >
+                            Sing In With Twitter
                         </CustomButton>
                     </div>
                 </form>

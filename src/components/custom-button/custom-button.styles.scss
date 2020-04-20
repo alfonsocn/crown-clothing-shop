@@ -39,5 +39,15 @@
         border: none;
       }
     }
+
+    &.twitter-sign-in {
+      background-color: #55acee;
+      color: white;
+
+      &:hover{
+        background-color: #55acee;
+        border:none;
+      }
+    }
   }
   
